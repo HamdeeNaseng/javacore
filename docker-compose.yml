@@ -1,0 +1,13 @@
+version: '3'
+services:
+  mysql:
+    image: bitnami/postgresql:latest
+    container_name: java-core-db
+    ports:
+      - '33061:33061'
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      POSTGRES_PASSWORD: postgres
+      POSTGRESQL_USERNAME: postgres
+      POSTGRESQL_DATABASE: postgres
+      POSTGRESQL_ROOT_PASSWORD: postgres
